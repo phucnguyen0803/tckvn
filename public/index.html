@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VN Stock Pro</title>
+  <meta name="description" content="Theo dõi realtime & phân tích cổ phiếu Việt Nam: xu hướng, BCTC, định giá, điểm mua, SL/TP." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="logo">▲</span> VN Stock <b>Pro</b></div>
+    <nav id="nav">
+      <a href="#/market" data-view="market"><span>🏠</span> Thị trường</a>
+      <a href="#/watchlist" data-view="watchlist"><span>⭐</span> Danh mục</a>
+      <a href="#/scanner" data-view="scanner"><span>🔎</span> Máy quét</a>
+      <a href="#/stock" data-view="stock"><span>📊</span> Phân tích mã</a>
+      <a href="#/settings" data-view="settings"><span>⚙️</span> Quản trị vốn</a>
+      <a href="#/method" data-view="method"><span>📘</span> Phương pháp</a>
+    </nav>
+    <div class="side-foot">
+      <div id="session-badge" class="badge">…</div>
+      <div id="market-mini" class="muted small"></div>
+      <p class="muted tiny">Giá: nghìn đồng · Dữ liệu: VNDirect, Vietcap.<br />⚠️ Công cụ hỗ trợ phân tích, không phải lời khuyên đầu tư.</p>
+    </div>
+  </aside>
+  <main id="view" class="main"></main>
+  <div id="toast" class="toast"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
